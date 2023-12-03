@@ -25,7 +25,7 @@ function AddEmployee() {
 
   const handleSave = () => {
     if (firstName && lastName && email && gender && salary) {
-      fetch("http://localhost:3000/api/v1/emp/employees", {
+      fetch("https://101304724-comp-3123-assignment1.vercel.app/api/v1/emp/employees", {
         method: 'post',
         headers: {
           'Content-Type': 'application/json'

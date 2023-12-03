@@ -12,7 +12,7 @@ function Login() {
   const handleLogin = () => {
     if (username && password) {
       setMessage('');
-      fetch(`http://localhost:3000/api/v1/user/login`, {
+      fetch(`https://101304724-comp-3123-assignment1.vercel.app/api/v1/user/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

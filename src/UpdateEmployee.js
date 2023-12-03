@@ -25,7 +25,7 @@ function UpdateEmployee() {
   const params = useParams();
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/v1/emp/employees/" + params.id)
+    fetch("https://101304724-comp-3123-assignment1.vercel.app/api/v1/emp/employees/" + params.id)
       .then(res => res.json())
       .then(res => {
         setFirstName(res.first_name);
@@ -38,7 +38,7 @@ function UpdateEmployee() {
 
   const handleSave = () => {
     if (firstName && lastName && email && gender && salary) {
-      fetch("http://localhost:3000/api/v1/emp/employees/" + params.id, {
+      fetch("https://101304724-comp-3123-assignment1.vercel.app/api/v1/emp/employees/" + params.id, {
         method: 'put',
         headers: {
           'Content-Type': 'application/json'

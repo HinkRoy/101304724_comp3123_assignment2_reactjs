@@ -18,7 +18,7 @@ function Signup() {
         return;
       }
       setMessage('');
-      fetch(`http://localhost:3000/api/v1/user/signup`, {
+      fetch(`https://101304724-comp-3123-assignment1.vercel.app/api/v1/user/signup`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

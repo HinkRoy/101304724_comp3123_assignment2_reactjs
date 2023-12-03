@@ -20,7 +20,7 @@ function Home() {
   }, [])
 
   const getEmployeeList = () => {
-    fetch('http://localhost:3000/api/v1/emp/employees')
+    fetch('https://101304724-comp-3123-assignment1.vercel.app/api/v1/emp/employees')
       .then(res => res.json())
       .then(res => {
         setEmployees(res);
@@ -28,7 +28,7 @@ function Home() {
   }
 
   const handleDelete = (id) => {
-    fetch('http://localhost:3000/api/v1/emp/employees/' + id, {
+    fetch('https://101304724-comp-3123-assignment1.vercel.app/api/v1/emp/employees/' + id, {
       method: 'DELETE'
     }).then(() => {
       getEmployeeList()

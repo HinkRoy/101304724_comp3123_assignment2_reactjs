@@ -13,7 +13,7 @@ function ViewEmployee() {
   const params = useParams();
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/v1/emp/employees/" + params.id)
+    fetch("https://101304724-comp-3123-assignment1.vercel.app/api/v1/emp/employees/" + params.id)
       .then(res => res.json())
       .then(res => {
         setEmployee(res)
